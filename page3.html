@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3 - Learn Deutsch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page3-bg">
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo-img"> 
+            <span class="logo-text">Learn Deutsch With Mady</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Page 1</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <!-- نقلنا كلاس active لـ Page 3 -->
+            <li><a href="page3.html" class="active">Page 3</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div style="padding: 50px; text-align: center;">
+        <h1 class="h3">Welcome to Page 3</h1>
+        <p3>German Expressions and How to prounance them.</p>
+    </div>
+
+    <h2 class="s3-h3">Click to every button to listen the expression. (read from left to right)</h2><br><br><br>
+    <div class="container">
+    <button class="e1-btn" onclick="let s=new SpeechSynthesisUtterance('Guten morgen'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Guten morgen (good morning)</button>
+    <button class="e2-btn" onclick="let s=new SpeechSynthesisUtterance('Guten Tag'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Guten Tag (good afternoon)</button>
+    <button class="e3-btn" onclick="let s=new SpeechSynthesisUtterance('Guten Abend'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Guten Abend (good evening)</button>
+    <button class="e4-btn" onclick="let s=new SpeechSynthesisUtterance('Gute Nacht'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Gute Nacht (good Night)</button>     
+    <button class="e5-btn" onclick="let s=new SpeechSynthesisUtterance('Tschüss'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Tschüss (Bye ; in formal)</button>
+    <button class="e6-btn" onclick="let s=new SpeechSynthesisUtterance('AufWiedersehen'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> AufWiedersehen (Goodbye ; formal)</button>
+    <button class="e7-btn" onclick="let s=new SpeechSynthesisUtterance('Wie heisst du'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Wie heisst du ? (What is your name)</button>
+    <button class="e8-btn" onclick="let s=new SpeechSynthesisUtterance('Ich heisse'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Ich heisse ... (My name is ...)</button>
+    <button class="e9-btn" onclick="let s=new SpeechSynthesisUtterance('Woher kommst du'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Woher kommst du ? (Where are you from ?)</button>
+    <button class="e10-btn" onclick="let s=new SpeechSynthesisUtterance('Ich komme aus'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Ich komme aus ... (I am from ... (Eygpt))</button>
+    <button class="e11-btn" onclick="let s=new SpeechSynthesisUtterance('Wo wohnst du'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Wo wohnst du ? ... (Where do you live)</button>
+    <button class="e12-btn" onclick="let s=new SpeechSynthesisUtterance('Ich wohne in'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Ich wohne in ... (I live in ... (Alex))</button>
+    <button class="e13-btn" onclick="let s=new SpeechSynthesisUtterance('Hallo'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Hallo (Hello)</button>
+    <button class="e14-btn" onclick="let s=new SpeechSynthesisUtterance('Bitte'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Bitte (Please / you're welcome)</button>
+    <button class="e15-btn" onclick="let s=new SpeechSynthesisUtterance('Danke'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Danke (Thank you)</button>
+    <button class="e16-btn" onclick="let s=new SpeechSynthesisUtterance('Vielen Dank'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Vielen Dank (Thank you very much)</button>
+    <button class="e17-btn" onclick="let s=new SpeechSynthesisUtterance('Entschuldigung'); s.lang='de-DE'; s.rate=0.5; speechSynthesis.speak(s)"> Entschuldigung (Exuse me / sorry)</button>
+    <button class="e18-btn" onclick="let s=new SpeechSynthesisUtterance('Kein problem'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Kein problem (No problem)</button>
+    <button class="e19-btn" onclick="let s=new SpeechSynthesisUtterance('Ja'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Ja (Yes)</button>
+    <button class="e20-btn" onclick="let s=new SpeechSynthesisUtterance('Nein'); s.lang='de-DE'; s.rate=0.7; speechSynthesis.speak(s)"> Nein (No)</button><br><br><br><br><br><br><br><br><br>
+
+    </div>
+
+    <button class="next-about-btn">Click here to  <a href="about.html" style="text-align: center; font-size: large;" > <h3 class="next-about-h3">Go to about Page</h3></a></button> 
+    <button class="back-page2-btn">Click here to  <a href="page2.html" style="text-align: center; font-size: large;" > <h3 class="back-page2-h3">Back to Page 2</h3></a></button> 
+    
+
+
+</body>
+</html>

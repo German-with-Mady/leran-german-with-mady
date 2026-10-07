@@ -1,0 +1,2113 @@
+/* إعادة تعيين الهوامش الافتراضية ونوع الخط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+h1{
+    color: rgb(2, 11, 92);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p1{
+    color: rgb(150, 9, 9);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px
+}
+p2{
+    color: snow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px
+}
+
+.h2{
+    color: black;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.h3{
+     color: black;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+p3{
+      color: snow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px
+}
+
+.no-h3{
+     color: white;
+}
+
+.no-btn{
+    background-image: linear-gradient( black,
+    red,
+    yellow);
+    color: white;
+}
+ 
+.colors-btn{
+    background-image: linear-gradient( black,
+    red,
+    yellow);
+     color: white;
+}
+
+.colors-h3{
+     color: white;
+}
+
+.abc-btn{
+     background-image: linear-gradient( black,
+    red,
+    yellow);
+     color: white;
+}
+
+.abc-h3{
+     color: white;
+}
+body {
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* خلفية الصفحة الأولى (شروق الشمس الهادئ) */
+.page1-bg {
+    background-image: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+/* خلفية الصفحة الثانية (الجليد النقي) */
+.page2-bg {
+   background-image: linear-gradient(grey,
+   rgb(10, 119, 207),
+   rgb(2, 80, 28)
+   );
+}
+
+/* خلفية الصفحة الثالثة (تدرج أخضر باستيل هادئ) */
+.page3-bg {
+    background-image: linear-gradient(135deg, #005212 0%, #ffffff 100%);
+}
+
+/* خلفية صفحة About (تدرج روز ناعم) */
+.about-bg {
+    background-color: white;
+}
+
+
+/* تنسيق شريط التنقل الأساسي */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #23272a; /* لون غامق احترافي */
+    padding: 15px 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* منطقة اللوجو والنص */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* مسافة بين صورة اللوجو والنص */
+}
+
+/* صورة اللوجو */
+.logo-img {
+    width: 45px; /* حجم اللوجو */
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50px; /* يجعل اللوجو دائرياً */
+}
+
+/* نص اللوجو المكتوب */
+.logo-text {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* تنسيق الأزرار والقائمة */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* مسافة بين الأزرار */
+}
+
+/* تنسيق أزرار التنقل */
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #2c2f33; /* لون خلفية الزر الافتراضي */
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* تأثير عند تمرير الماوس فوق الأزرار (Hover) */
+.nav-links a:hover {
+    background-color: #ffcc00; /* لون أصفر مميز يناسب ثيم اللغة الألمانية */
+    color: #23272a; /* تغيير لون الخط للداكن ليكون واضحاً */
+    transform: translateY(-2px); /* حركة رفع خفيفة للزر */
+}
+
+/* الزر النشط الخاص بالصفحة الحالية */
+.nav-links a.active {
+    background-color: #ffcc00;
+    color: #23272a;
+}
+
+
+.deutsch-btn{
+    font-size: 32px;           
+    font-weight: bold;   
+}
+
+.next-page-btn{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.next-page-h3{
+    color: white;
+}
+
+.s-h3{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+  
+}
+
+
+
+/* تنسيق الحاوية لتوزيع الأزرار على كامل عرض الصفحة */
+.letters-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* تحديد أقل عرض للزر */
+    gap: 20px; /* المسافة بين الأزرار */
+    padding: 30px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* تنسيق موحد لجعل الأزرار كبار وبخط واضح */
+.letters-container button {
+    font-size: 32px; /* حجم الحرف كبير */
+    font-weight: bold;
+    padding: 30px 20px; /* تكبير حجم الزر نفسه */
+    border: none;
+    border-radius: 15px; /* زوايا دائرية ناعمة */
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+}
+
+/* تأثير حركة تفاعلي جميل عند تمرير الماوس */
+.letters-container button:hover {
+    transform: scale(1.08); /* تكبير الزر قليلاً عند الوقوف عليه */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* الألوان المختلفة لكل زر (خلفية ولون خط) */
+.L1-btn { background-color: #FF5733; color: #FFFFFF; }
+.L2-btn { background-color: #33FF57; color: #111111; }
+.L3-btn { background-color: #3357FF; color: #FFFFFF; }
+.L4-btn { background-color: #F3FF33; color: #222222; }
+.L5-btn { background-color: #FF33A1; color: #FFFFFF; }
+.L6-btn { background-color: #33FFF3; color: #111111; }
+.L7-btn { background-color: #9A33FF; color: #FFFFFF; }
+.L8-btn { background-color: #FF9633; color: #FFFFFF; }
+.L9-btn { background-color: #33FF96; color: #111111; }
+.L10-btn { background-color: #FF3333; color: #FFFFFF; }
+.L11-btn { background-color: #33A1FF; color: #FFFFFF; }
+.L12-btn { background-color: #A1FF33; color: #222222; }
+.L13-btn { background-color: #FF33F3; color: #FFFFFF; }
+.L14-btn { background-color: #33FFD1; color: #111111; }
+.L15-btn { background-color: #D133FF; color: #FFFFFF; }
+.L16-btn { background-color: #FFD133; color: #222222; }
+.L17-btn { background-color: #3366FF; color: #FFFFFF; }
+.L18-btn { background-color: #66FF33; color: #111111; }
+.L19-btn { background-color: #FF3366; color: #FFFFFF; }
+.L20-btn { background-color: #33FFCC; color: #111111; }
+.L21-btn { background-color: #CC33FF; color: #FFFFFF; }
+.L22-btn { background-color: #FFCC33; color: #222222; }
+.L23-btn { background-color: #3399FF; color: #FFFFFF; }
+.L24-btn { background-color: #99FF33; color: #111111; }
+.L25-btn { background-color: #FF3399; color: #FFFFFF; }
+.L26-btn { background-color: #33FF66; color: #111111; }
+.L27-btn { background-color: #E67E22; color: #FFFFFF; }
+.L28-btn { background-color: #9B59B6; color: #FFFFFF; }
+.L29-btn { background-color: #1ABC9C; color: #FFFFFF; }
+.L30-btn { background-color: #34495E; color: #FFFFFF; }
+
+p{
+    font-size: large;
+    margin-bottom: auto;
+    color: black;
+    
+}
+
+p123{
+    font-size: large;
+    margin-bottom: auto;
+    color: black;
+   
+}
+
+p1{
+    font-size: large;
+    margin-bottom: auto;
+    color: black;
+    
+}
+
+.back-page1-btn{
+     text-align: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.back-page1-h3{
+    color: black;
+}
+
+.letters-bg{
+    background-image: linear-gradient(rgb(0, 255, 179),
+    rgb(0, 4, 255),
+    rgb(0, 225, 255));
+}
+
+.letters-h1{
+    color: white;
+}
+
+.numbers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* تحديد أقل عرض للزر */
+    gap: 20px; /* المسافة بين الأزرار */
+    padding: 30px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.numbers-container button {
+    font-size: 32px; /* حجم الحرف كبير */
+    font-weight: bold;
+    padding: 30px 20px; /* تكبير حجم الزر نفسه */
+    border: none;
+    border-radius: 15px; /* زوايا دائرية ناعمة */
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+}
+
+.numbers-container button:hover {
+    transform: scale(1.08); /* تكبير الزر قليلاً عند الوقوف عليه */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.N1-btn { background-color: #FF5733; color: #FFFFFF;}
+.N2-btn { background-color: #33FF57; color: #111111; }
+.N3-btn { background-color: #3357FF; color: #FFFFFF; }
+.N4-btn { background-color: #F3FF33; color: #222222; }
+.N5-btn { background-color: #FF33A1; color: #FFFFFF; }
+.N6-btn { background-color: #33FFF3; color: #111111; }
+.N7-btn { background-color: #9A33FF; color: #FFFFFF; }
+.N8-btn { background-color: #FF9633; color: #FFFFFF; }
+.N9-btn { background-color: #33FF96; color: #111111; }
+.N10-btn { background-color: #FF3333; color: #FFFFFF; }
+.N11-btn { background-color: #33A1FF; color: #FFFFFF; }
+.N12-btn { background-color: #A1FF33; color: #222222; }
+.N13-btn { background-color: #FF33F3; color: #FFFFFF;
+width: max-content;
+ }
+.N14-btn { background-color: #33FFD1; color: #111111;
+width: max-content;
+ }
+.N15-btn { background-color: #D133FF; color: #FFFFFF;
+width: max-content;
+ }
+.N16-btn { background-color: #FFD133; color: #222222;
+width: max-content;
+ }
+.N17-btn { background-color: #3366FF; color: #FFFFFF;
+width: max-content;
+ }
+.N18-btn { background-color: #66FF33; color: #111111;
+width: max-content;
+ }
+.N19-btn { background-color: #FF3366; color: #FFFFFF;
+width: max-content;
+ }
+
+ .back-no1-btn{
+     text-align: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 80px;
+    transform: translateX(-50%);
+}
+
+.back-no1-h3{
+    color: black;
+}
+
+ .next-no1-btn{
+     text-align: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    transform: translateX(-50%);
+}
+
+.next-no1-h3{
+    color: black;
+}
+
+.numbers-bg{
+    background-image: linear-gradient(yellow,
+    orange,
+    rgb(169, 224, 96));
+}
+
+.numbers-h1{
+    color: black;
+}
+
+.N20-btn { background-color: #FF5733; color: #FFFFFF;
+width: max-content;
+}
+
+.N30-btn { background-color: #3357FF; color: #FFFFFF;
+width: max-content;
+ }
+
+.N40-btn { background-color: #FF33A1; color: #FFFFFF;
+width: max-content;
+ }
+.N50-btn { background-color: #33FFF3; color: #111111;
+width: max-content;
+ }
+.N60-btn { background-color: #9A33FF; color: #FFFFFF; 
+width: max-content;
+}
+.N70-btn { background-color: #FF9633; color: #FFFFFF; 
+width: max-content;
+}
+.N80-btn { background-color: #33FF96; color: #111111;
+width: max-content;
+ }
+.N90-btn { background-color: #FF3333; color: #FFFFFF;
+width: max-content;
+ }
+
+ .N100{
+    width: max-content;
+ }
+
+
+ .numbers1-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* تحديد أقل عرض للزر */
+    gap: 20px; /* المسافة بين الأزرار */
+    padding: 30px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.numbers1-container button {
+    font-size: 32px; /* حجم الحرف كبير */
+    font-weight: bold;
+    padding: 30px 20px; /* تكبير حجم الزر نفسه */
+    border: none;
+    border-radius: 15px; /* زوايا دائرية ناعمة */
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+}
+
+.numbers1-container button:hover {
+    transform: scale(1.08); /* تكبير الزر قليلاً عند الوقوف عليه */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.numbers2-bg{
+    background-image: linear-gradient(rgb(161, 230, 161),rgb(250, 250, 126),rgb(132, 132, 229));
+}
+
+.back-no2-btn{
+     text-align: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.numbers2-h1{
+    color: black;
+}
+
+.back-no2-h3{
+    color: black;
+}
+
+.color-h1{
+    color: black;
+}
+
+.C1-btn { background-color: red; color: #FFFFFF;
+width: max-content;
+}
+.C2-btn { background-color: blue; color: #FFFFFF;
+width: max-content;
+ }
+.C3-btn { background-color: green; color: #FFFFFF; 
+width: max-content;
+}
+.C4-btn { background-color: yellow; color: #222222;
+width: max-content;
+ }
+.C5-btn { background-color: black; color: #FFFFFF;
+width: max-content;
+ }
+.C6-btn { background-color: white; color: #111111;
+width: max-content;
+ }
+.C7-btn { background-color: grey; color: #FFFFFF;
+width: max-content;
+ }
+.C8-btn { background-color: orange; color: #FFFFFF;
+width: max-content;
+ }
+.C9-btn { background-color: brown; color: #111111; 
+width: max-content;
+}
+.C10-btn { background-color: purple; color: #FFFFFF;
+width: max-content;
+ }
+.C11-btn { background-color: rgb(179, 67, 86); color: #FFFFFF; 
+width: max-content;
+}
+
+.colors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* تحديد أقل عرض للزر */
+    gap: 20px; /* المسافة بين الأزرار */
+    padding: 30px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.colors-container button {
+    font-size: 32px; 
+    font-weight: bold;
+    padding: 30px 20px; 
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+}
+
+/* تأثير حركة تفاعلي جميل عند تمرير الماوس */
+.colors-container button:hover {
+    transform: scale(1.08); /* تكبير الزر قليلاً عند الوقوف عليه */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.colors-bg{
+    background-image: linear-gradient(rgb(0, 140, 255),
+    rgb(186, 235, 74),
+    yellow
+    );
+}
+
+.back-co2-btn{
+      text-align: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.v1-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v2-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v3-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v4-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v5-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v6-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v7-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v8-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v9-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v10-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v11-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v12-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v13-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v14-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v15-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v16-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v17-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v18-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v19-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v20-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v21-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v22-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v23-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v24-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v25-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v26-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v27-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v28-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v29-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v30-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v31-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+
+.v32-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v33-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v34-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v35-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v36-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v37-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v38-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v39-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v40-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v41-btn{
+    background-color: black ;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v42-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v43-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v44-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v45-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v46-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v47-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v48-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v49-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v50-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v51-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v52-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v53-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v54-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v55-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v56-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v57-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v58-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v59-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v60-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v61-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v62-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v63-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v64-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v65-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v66-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v67-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v68-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v69-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v70-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v71-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v72-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v73-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v74-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v75-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v76-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v77-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v78-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v79-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v80-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v81-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v82-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v83-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v84-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v85-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v86-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v87-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v88-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v89-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v90-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v91-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v92-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v93-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v94-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v95-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v96-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v97-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v98-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v99-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v100-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v101-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v102-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v103-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v104-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v105-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v106-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v107-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v108-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v109-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v110-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v111-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v112-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v113-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v114-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v115-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v116-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v117-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v118-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v119-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v120-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v121-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v122-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v123-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v124-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v125-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v126-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v127-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v128-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v129-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v130-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v131-btn{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.v132-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v133-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    
+}
+
+.v134-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+ 
+    
+}
+
+.v135-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v136-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v137-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.v138-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v139-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+   
+}
+
+.v140-btn{
+    background-color: white;
+    color: #1E293B;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ .back-v-btn{
+     text-align: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 80px;
+    transform: translateX(-50%);
+    background-color: yellow;
+}
+
+.back-v-h3{
+    color: black;
+}
+
+ .next-v-btn{
+     text-align: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    right: -50px;
+    transform: translateX(-50%);
+    background-color: yellow;
+}
+
+.next-v-h3{
+    color: black;
+}
+
+.s3-h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container{
+    display:grid ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.e1-btn{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: darkgreen;
+    font-size: 30px;
+}
+
+.e2-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: orange;
+    font-size: 30px;
+}
+
+.e3-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: #F5F5DC ;
+    font-size: 30px;
+}
+
+.e4-btn{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: darkgreen;
+    font-size: 30px;
+}
+
+.e5-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color:  orange;
+    font-size: 30px;
+}
+
+.e6-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color:  #F5F5DC;
+    font-size: 30px;
+}
+
+.e7-btn{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: darkgreen;
+    font-size: 30px;
+}
+
+.e8-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: orange;
+    font-size: 30px;
+}
+
+.e9-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color:  #F5F5DC;
+    font-size: 30px;
+}
+
+.e10-btn{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: darkgreen;
+    font-size: 30px;
+}
+
+.e11-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color:  orange;
+    font-size: 30px;
+}
+
+.e12-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: #F5F5DC;
+    font-size: 30px;
+}
+
+.e13-btn{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: darkgreen;
+    font-size: 30px;
+}
+
+.e14-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color:  orange;
+    font-size: 30px;
+}
+
+.e15-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: #F5F5DC;
+    font-size: 30px;
+}
+
+.e16-btn{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: darkgreen;
+    font-size: 30px;
+}
+
+.e17-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color:  orange;
+    font-size: 30px;
+}
+
+.e18-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: #F5F5DC;
+    font-size: 30px;
+}
+
+.e19-btn{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: darkgreen;
+    font-size: 30px;
+}
+
+.e20-btn{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color:  orange;
+    font-size: 30px;
+}
+
+.next-about-btn{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.next-about-h3{
+    color: white;
+}
+
+.back-page2-btn{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+.back-page2-h3{
+    color: white;
+}
+
+.a1{
+    color: black;
+    background-color: #33FF57;
+}
+
+.ap1{
+    color: black;
+    font-size: 32px;
+    background-color: orange;
+}
+
+.ap2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+
+img {
+  /* حدد المقاس الصغير الذي تريده هنا (مثلاً 150 بكسل) */
+  width: 440px;
+  height: 440px;
+  
+  /* هذا السطر السحري يحافظ على تناسق أبعاد الصورة داخل المساحة الجديدة */
+  object-fit: contain;
+  
+  /* لتحسين وضوح الحواف وتفاصيل النص عند التصغير */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.back-about-btn{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.back-about-h3{
+    color: white;
+}
